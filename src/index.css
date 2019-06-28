@@ -1,13 +1,33 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
+    padding: 5%;
+    text-align: center;
+  }
+  
+  .link-home {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+  }
+  
+  .clue {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .text-hidden {
+    visibility: hidden;
+  }
+  
+  .text-revealed {
+    animation-name: fade-in;
+    animation-duration: 1s;
+    visibility: visible;
+  }
+  
+  @keyframes fade-in {
+    from { opacity: 0 }
+    to { opacity: 100 }
+  }
